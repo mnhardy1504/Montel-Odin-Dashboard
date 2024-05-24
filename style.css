@@ -49,20 +49,22 @@
       "header header header"
       "projects projects announcements"
       "projects projects trending";
-    grid-template-rows: 150px 1fr 200px; 
-    grid-template-columns: 1fr 2fr 1fr; 
-    grid-gap: 20px;
+    grid-template-rows: 150px 1fr 310px; 
+    grid-template-columns: 1fr 2fr 300px; 
+    grid-gap: 65px;
     padding: 20px;
     flex-grow: 1;
+    
   }
   
   .header {
     grid-area: header;
     background-color: #eee;
-    padding: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 150px;
+    width: 3 fr;
   }
   
   .header h1{
@@ -70,12 +72,26 @@
     padding: 50px;
     display: flex;
     color: red;
+    box-sizing: border-box;
   }
 
   .projects {
     grid-area: projects;
+    display: grid;
     background-color: #ddd;
     padding: 20px;
+    grid-gap: 20px;
+    grid-template-areas: 
+       "super-cool-project less-cool-project"
+       "impossible-app easy-peasy-app"
+       "ad-blocker money-maker";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .super-cool-project{
+    grid-gap: 65px;
+    background-color: white;
   }
   
   .announcements {
