@@ -1,13 +1,15 @@
-.main{
-    display: flex;
-    }
+.main {
+    display: grid;
+    grid-template-columns: 300px 1fr; 
+    height: 100vh; 
+  }
   
   
   .sidebar{
     display: flex;
     flex-direction: column;
     background-color: #0284c7;
-    width: 300px;
+    width: 290px;
     height: 100vh;
     color: white;
     padding-left: 30px;
@@ -40,3 +42,50 @@
     padding: 10px 20px;
     margin-left: 5px;
   }   
+
+  .content {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "projects projects announcements"
+      "projects projects trending";
+    grid-template-rows: 150px 1fr 200px; 
+    grid-template-columns: 1fr 2fr 1fr; 
+    grid-gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #eee;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1{
+    background-color: #eee;
+    padding: 50px;
+    display: flex;
+    color: red;
+  }
+
+  .projects {
+    grid-area: projects;
+    background-color: #ddd;
+    padding: 20px;
+  }
+  
+  .announcements {
+    grid-area: announcements;
+    background-color: #ccc;
+    padding: 20px;
+  }
+  
+  .trending {
+    grid-area: trending;
+    background-color: #eee;
+    padding: 20px;
+  }
