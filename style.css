@@ -28,14 +28,15 @@
   
    .sidebar-bottom-nav{
     list-style-type: none !important;
-    padding:0;
+    padding:100;
     margin-top: auto; 
-    margin-bottom: 450px;
+    margin-bottom: 20px;
     padding-left: 10px;
    }
   
    .sidebar-nav li {
     padding: 10px 20px;
+  
   }
   
   .sidebar-bottom-nav li {
@@ -49,8 +50,8 @@
       "header header header"
       "projects projects announcements"
       "projects projects trending";
-    grid-template-rows: 150px 1fr 310px; 
-    grid-template-columns: 1fr 2fr 300px; 
+    grid-template-rows: 150px 1fr 1fr; 
+    grid-template-columns: 1fr 2fr 1fr; 
     grid-gap: 65px;
     padding: 20px;
     flex-grow: 1;
@@ -90,7 +91,9 @@
   }
 
   .super-cool-project{
-    grid-gap: 65px;
+    grid-gap: 15px;
+    width: 400px;
+    height: 250px;
     background-color: white;
   }
   
