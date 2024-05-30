@@ -1,19 +1,19 @@
 .main {
-    display: grid;
-    grid-template-columns: 300px 1fr; 
-    height: 100vh; 
-  }
-  
-  
-  .sidebar{
-    display: flex;
-    flex-direction: column;
-    background-color: #0284c7;
-    width: 290px;
-    height: 100vh;
-    color: white;
-    padding-left: 30px;
-   }     
+  display: grid;
+  grid-template-columns: 300px 1fr; /* Define two grid columns: 300px for the sidebar and 1fr for the remaining space */
+  height: 100vh; /* Set the height of the main container to the full viewport height */
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #0284c7;
+  width: 290px; /* Set the desired width for the sidebar */
+  height: 100%; /* Make the sidebar height equal to the height of the parent (.main) container */
+  color: white;
+  padding-left: 30px;
+}
+   
 
    .sidebar h1{
     padding-left: 30px;
@@ -28,7 +28,7 @@
   
    .sidebar-bottom-nav{
     list-style-type: none !important;
-    padding:100;
+    padding:200;
     margin-top: auto; 
     margin-bottom: 20px;
     padding-left: 10px;
@@ -36,7 +36,6 @@
   
    .sidebar-nav li {
     padding: 10px 20px;
-  
   }
   
   .sidebar-bottom-nav li {
@@ -54,8 +53,9 @@
     grid-template-columns: 1fr 2fr 1fr; 
     grid-gap: 65px;
     padding: 20px;
+    padding-bottom: 50px;
+    height: 120vh;
     flex-grow: 1;
-    
   }
   
   .header {
