@@ -1,15 +1,16 @@
 .main {
   display: grid;
-  grid-template-columns: 300px 1fr; /* Define two grid columns: 300px for the sidebar and 1fr for the remaining space */
-  height: 100vh; /* Set the height of the main container to the full viewport height */
+  grid-template-columns: 300px 1fr; 
+  height: 100vh; 
+  background-color: #ddd;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
   background-color: #0284c7;
-  width: 290px; /* Set the desired width for the sidebar */
-  height: 100%; /* Make the sidebar height equal to the height of the parent (.main) container */
+  width: 290px;
+  height: 100%; 
   color: white;
   padding-left: 30px;
 }
@@ -60,16 +61,12 @@
   
   .header {
     grid-area: header;
-    background-color: #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 150px;
-    width: 3 fr;
+    background-color: white;
+   
   }
   
   .header h1{
-    background-color: #eee;
+    background-color: white;
     padding: 50px;
     display: flex;
     color: red;
@@ -91,20 +88,41 @@
   }
 
   .super-cool-project{
-    grid-gap: 15px;
-    width: 400px;
-    height: 250px;
+    grid-area: super-cool-project;
     background-color: white;
+  }
+
+  .less-cool-project{
+    grid-area: less-cool-project;
+    background-color: white;  
+  }
+
+  .impossible-app{
+    grid-area: impossible-app;
+    background-color: white;  
+  }
+
+  .easy-peasy-app{
+    grid-area: easy-peasy-app;
+    background-color: white;  
+  }
+
+  .ad-blocker{
+    grid-area: ad-blocker;
+    background-color: white;  
+  }
+
+  .money-maker{
+    grid-area: money-maker;
+    background-color: white;  
   }
   
   .announcements {
     grid-area: announcements;
-    background-color: #ccc;
-    padding: 20px;
+    background-color: white;
   }
   
   .trending {
     grid-area: trending;
-    background-color: #eee;
-    padding: 20px;
+    background-color: white;
   }
