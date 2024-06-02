@@ -6,8 +6,6 @@
 }
 
 .sidebar {
-  display: flex;
-  flex-direction: column;
   background-color: #0284c7;
   width: 290px;
   height: 100%; 
@@ -29,9 +27,7 @@
   
    .sidebar-bottom-nav{
     list-style-type: none !important;
-    padding:200;
-    margin-top: auto; 
-    margin-bottom: 20px;
+    margin-top: 50px;
     padding-left: 10px;
    }
   
@@ -47,7 +43,6 @@
   .content {
     display: grid;
     grid-template-areas:
-      "header header header"
       "projects projects announcements"
       "projects projects trending";
     grid-template-rows: 150px 1fr 1fr; 
@@ -60,9 +55,9 @@
   }
   
   .header {
-    grid-area: header;
+    display: grid;
+    grid-template-areas: "header header header ";
     background-color: white;
-   
   }
   
   .header h1{
@@ -124,5 +119,5 @@
   
   .trending {
     grid-area: trending;
-    background-color: white;
+    background-color: #eee;
   }
