@@ -69,10 +69,10 @@
       "projects announcements"
       "projects trending"; 
     grid-template-columns: 2fr 1fr; 
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #d8d8d8;
     overflow-y: auto;
   }
 
@@ -84,7 +84,7 @@
   .projects {
     grid-area: projects;
     display: grid;
-    background-color: #ddd;
+    background-color: #d8d8d8;
     padding: 20px;
     grid-gap: 20px;
     grid-template-areas: 
@@ -123,9 +123,15 @@
   .announcements {
     grid-area: announcements;
     background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .trending {
     grid-area: trending;
-    background-color: #eee;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
