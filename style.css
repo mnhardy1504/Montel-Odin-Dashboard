@@ -1,11 +1,11 @@
 .main {
   display: grid;
-  grid-template-columns: 250px 1fr; 
+  grid-template-columns: 250px 1fr;
   grid-template-rows: auto 1fr;
-  grid-template-areas: 
-  "sidebar header"
-  "sidebar content";
-  height: 100vh; 
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+  height: 100vh;
   background-color: #ddd;
 }
 
@@ -17,121 +17,120 @@
   color: white;
   padding: 20px;
 }
-   
 
-   .sidebar h1{
-    padding-left: 30px;
-   }
-  
-   .sidebar-nav{
-    list-style-type: none !important;
-    margin-left: 10px;
-    padding: 0 15px;
-    margin: 0;
-   }
-  
-   .sidebar-bottom-nav{
-    list-style-type: none !important;
-    margin-top: 50px;
-    padding-left: 10px;
-   }
-  
-   .sidebar-nav li {
-    padding: 10px 20px;
-  }
-  
-  .sidebar-bottom-nav li {
-    padding: 10px 20px;
-    margin-left: 5px;
-  }   
 
-  .header {
-    grid-area: header;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header h1{
-    background-color: white;
-    padding: 50px;
-    display: flex;
-    color: red;
-    box-sizing: border-box;
-  }
+.sidebar h1 {
+  padding-left: 30px;
+}
 
-  .content {
-    grid-area: content;
-    display: grid;
-    grid-template-areas:
-      "projects announcements"
-      "projects trending"; 
-    grid-template-columns: 2fr 1fr; 
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
-    padding: 20px;
-    background-color: #d8d8d8;
-    overflow-y: auto;
-  }
+.sidebar-nav {
+  list-style-type: none !important;
+  margin-left: 10px;
+  padding: 0 15px;
+  margin: 0;
+}
 
-  .super-cool-project{
-    grid-area: super-cool-project;
-    background-color: white;
-  }
+.sidebar-bottom-nav {
+  list-style-type: none !important;
+  margin-top: 50px;
+  padding-left: 10px;
+}
 
-  .projects {
-    grid-area: projects;
-    display: grid;
-    background-color: #d8d8d8;
-    padding: 20px;
-    grid-gap: 20px;
-    grid-template-areas: 
-       "super-cool-project less-cool-project"
-       "impossible-app easy-peasy-app"
-       "ad-blocker money-maker";
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
+.sidebar-nav li {
+  padding: 10px 20px;
+}
 
-  .less-cool-project{
-    grid-area: less-cool-project;
-    background-color: white;  
-  }
+.sidebar-bottom-nav li {
+  padding: 10px 20px;
+  margin-left: 5px;
+}
 
-  .impossible-app{
-    grid-area: impossible-app;
-    background-color: white;  
-  }
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  .easy-peasy-app{
-    grid-area: easy-peasy-app;
-    background-color: white;  
-  }
+.header h1 {
+  background-color: white;
+  padding: 50px;
+  display: flex;
+  color: red;
+  box-sizing: border-box;
+}
 
-  .ad-blocker{
-    grid-area: ad-blocker;
-    background-color: white;  
-  }
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: #d8d8d8;
+  overflow-y: auto;
+}
 
-  .money-maker{
-    grid-area: money-maker;
-    background-color: white;  
-  }
-  
-  .announcements {
-    grid-area: announcements;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .trending {
-    grid-area: trending;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+.super-cool-project {
+  grid-area: super-cool-project;
+  background-color: white;
+}
+
+.projects {
+  grid-area: projects;
+  display: grid;
+  background-color: #d8d8d8;
+  grid-gap: 20px;
+  grid-template-areas:
+    "super-cool-project less-cool-project"
+    "impossible-app easy-peasy-app"
+    "ad-blocker money-maker";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.less-cool-project {
+  grid-area: less-cool-project;
+  background-color: white;
+}
+
+.impossible-app {
+  grid-area: impossible-app;
+  background-color: white;
+}
+
+.easy-peasy-app {
+  grid-area: easy-peasy-app;
+  background-color: white;
+}
+
+.ad-blocker {
+  grid-area: ad-blocker;
+  background-color: white;
+}
+
+.money-maker {
+  grid-area: money-maker;
+  background-color: white;
+}
+
+.announcements {
+  grid-area: announcements;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trending {
+  grid-area: trending;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
