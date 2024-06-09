@@ -49,7 +49,8 @@
   grid-area: header;
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px;
+  height: 100px;   /* length of header */
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
@@ -57,7 +58,8 @@
 
 .header h1 {
   background-color: white;
-  padding: 50px;
+  padding: 20px;
+  height: 60px;
   display: flex;
   color: red;
   box-sizing: border-box;
@@ -72,7 +74,7 @@
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 20px;
-  padding: 20px;
+  padding: 60px 20px 60px; /* padding top and padding bottom at 60*/
   background-color: #d8d8d8;
   overflow-y: auto;
 }
@@ -123,7 +125,7 @@
 .announcements {
   grid-area: announcements;
   background-color: white;
-  padding: 20px;
+  padding: 100px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
