@@ -47,22 +47,44 @@
 
 .header {
   grid-area: header;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto; /* 1fr for the search bar, auto for the right section */
   align-items: center;
   padding: 20px;
-  height: 100px;   /* length of header */
+  height: 100px;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .header h1 {
   background-color: white;
-  padding: 20px;
+  padding: 20px; /* this is how i move the header text up or down */
   height: 60px;
   display: flex;
   color: red;
   box-sizing: border-box;
+}
+
+.header-buttons {
+  display: flex;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.header-buttons button {
+  padding: 12px 35px;
+  margin-right: 30px;
+  background-color: #0284c7;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .content {
@@ -138,4 +160,9 @@
   margin-top: 20px; /*thats how i split these sections apart and added space */
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
 }
