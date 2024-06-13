@@ -64,7 +64,8 @@
 
 .header h1 {
   background-color: white;
-  padding: 20px; /* this is how i move the header text up or down */
+  padding: 10px; /* this is how i move the header text up or down */
+  margin-left: 80px;
   height: 60px;
   display: flex;
   color: red;
@@ -75,6 +76,7 @@
   display: flex;
   padding-top: 40px;
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .header-buttons button {
@@ -165,4 +167,12 @@
 .user-info {
   display: flex;
   align-items: center;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px 12px; /* moving search bar to the right */
+  margin-left: 50px;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Adjust the value to control the roundness */
 }
