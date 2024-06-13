@@ -60,12 +60,13 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-right: 20px; /* Adjust this value to control the spacing from the right edge */
 }
 
 .header h1 {
   background-color: white;
   padding: 10px; /* this is how i move the header text up or down */
-  margin-left: 80px;
+  margin-left: 80px;  /* left or right */
   height: 60px;
   display: flex;
   color: red;
@@ -167,6 +168,7 @@
 .user-info {
   display: flex;
   align-items: center;
+  align-items: flex-start;
 }
 
 .search-bar input {
@@ -175,4 +177,13 @@
   margin-left: 50px;
   border: 1px solid #ccc;
   border-radius: 20px; /* Adjust the value to control the roundness */
+  color: #333;
+  background-color: #d8d8d8;
+}
+
+.greeting {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-left: 95px;
+  margin-bottom: 50px;
 }
