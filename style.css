@@ -63,8 +63,8 @@
   grid-area: search-container;
   padding: 8px 12px; /* moving search bar to the right */
   padding-left: 10px;
-  margin-left: 50px;
-  width:100%;
+  margin-left: 80px;
+  width:90%;
   border: 1px solid #ccc;
   border-radius: 20px; /* Adjust the value to control the roundness */
   color: #d8d8d8;
