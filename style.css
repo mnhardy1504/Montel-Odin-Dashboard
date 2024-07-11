@@ -1,6 +1,14 @@
-.main {
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-grid {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 20% 80%;
   grid-template-rows: auto 1fr;
   grid-template-areas:
     "sidebar header"
@@ -9,24 +17,41 @@
   background-color: #ddd;
 }
 
+.main{
+  background-color: #ddd;
+  height: 100 vh;
+}
 .sidebar {
-  grid-area: sidebar;
-  display: flex;
   background-color: #0284c7;
-  flex-direction: column;
   color: white;
-  padding: 20px;
+  height: 100vh;
 }
 
-.sidebar h1 {
-  padding-left: 30px;
+.logo-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0;
+  padding-left: 20px;
 }
 
-.sidebar-nav {
-  list-style-type: none !important;
-  margin-left: 10px;
-  padding: 0 15px;
-  margin: 0;
+.logo-text h1{
+    font-size: 35px;
+}
+
+.icon-text{
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+ align-items: center;
+ margin: 60px 20px;
+}
+
+.icon-text p{
+margin-left: 10px;
+font-size: 20px;
+font-weight: 700;
 }
 
 .sidebar-bottom-nav {
