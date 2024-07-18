@@ -31,10 +31,41 @@ body{
   flex-direction: column;
  }
 
+ .search-bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  margin-left: 50px;
+ }
+
+ .avatar-pic{
+  margin: 0 20px;
+
+ }
+
+ .form-input{
+  width: 950px;
+  height: 30px;
+  background-color: lightgrey;
+  border-radius: 20px;
+  border:1px solid lightgrey;
+  margin-left: 25px;
+  margin-right: 700px;
+ }
+
  .content{
   background-color: #d8d8d8;
  }
  
+ .welcome{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  margin-left: 50px;
+ }
 
 .logo-text h1{
   font-size: 35px;
