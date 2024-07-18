@@ -8,21 +8,62 @@ body{
 }
 .main-grid {
   display: grid;
-  grid-template-columns: 30% 80%;
+  grid-template-columns: 15% 85%;
   grid-template-rows: auto 1fr;
   height: 100vh;
   background-color: #ddd;
 }
 
-.main{
-  background-color: #ddd;
-  height: 100 vh;
-}
-.sidebar {
+.sidebar{
   background-color: #0284c7;
-  color: white;
   height: 100vh;
-  width: 30vh;
+}
+.main{
+  background-color: white;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 20% 80%; /* splits header and mean content space*/
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+ }
+
+ .content{
+  background-color: #d8d8d8;
+ }
+ 
+
+.logo-text h1{
+  font-size: 35px;
+  margin-left: 25px;
+  color: white;
+}
+
+.icon-text{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+margin: 30px 20px;
+}
+
+.icon-text p{
+margin-left: 25px;
+font-size: 20px;
+font-weight: 700;
+}
+
+.list-items{
+margin-top: 50px; /* can push items below dashboard down */
+color: white;
+
+}
+
+.list-items-bottom{
+margin-top: 100px;
 }
 
 .logo-text {
@@ -32,92 +73,9 @@ body{
   align-items: center;
   margin: 20px 0;
   padding-left: 20px;
+  color:#d8d8d8
 }
 
-.logo-text h1{
-    font-size: 35px;
-}
-
-.icon-text{
- display: flex;
- flex-direction: row;
- justify-content: flex-start;
- align-items: center;
- margin: 30px 20px;
-}
-
-.icon-text p{
-margin-left: 10px;
-font-size: 20px;
-font-weight: 700;
-}
-
-.list-items{
-  margin-top: 50px; /* can push items below dashboard down */
-}
-
-.list-items-bottom{
-  margin-top: 100px;
-}
-
-.sidebar-bottom-nav {
-  list-style-type: none !important;
-  margin-top: 50px;
-  padding-left: 10px;
-}
-
-.sidebar-nav li {
-  padding: 10px 20px;
-}
-
-.sidebar-bottom-nav li {
-  padding: 10px 20px;
-  margin-left: 5px;
-}
-
-.header {
-  grid-area: header;
-  display: grid;
-  grid-template-areas:
-  "search-container header-right"
-  "user-info header-buttons";
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  height: 140px;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.search-container{
-  grid-area: search-container;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr;
-  gap: 6px;
-}
-
-.search-container input {
-  background-color: #d8d8d8;
-}
-
-.search-container .search-icon {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* center the content inside the icon div */
-  background-color: #f0f0f0; /* optional: add a background color for the icon */
-}
-
-.header-right {
-  grid-area: header-right;
-  display: flex;
-  padding-left: 100px;
-  align-items: center;
-  
-}
 
 .user-info{
   grid-area: user-info;
@@ -159,33 +117,7 @@ font-weight: 700;
   cursor: pointer;
 }
 
-.content {
-  grid-area: content;
-  display: grid;
-  grid-template-areas:
-    "projects announcements"
-    "projects trending-section";
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 20px;
-  padding-top: 60px;
-  padding: 60px 15px 60px; /* padding top and padding bottom at 60*/
-  background-color: #d8d8d8;
-  overflow-y: auto;
-}
 
-.projects {
-  grid-area: projects;
-  display: grid;
-  background-color: #d8d8d8;
-  grid-gap: 25px;
-  grid-template-areas:
-    "super-cool-project less-cool-project"
-    "impossible-app easy-peasy-app"
-    "ad-blocker money-maker";
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-}
 
 .super-cool-project {
   grid-area: super-cool-project;
