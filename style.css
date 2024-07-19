@@ -31,33 +31,33 @@ body{
   flex-direction: column;
  }
 
- .search-bar{
+.search-bar{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 20px;
+  margin: 30px;
   margin-left: 50px;
  }
 
- .avatar-pic{
-  margin: 0 20px;
-
+ .left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px;
+  margin-left: 20px;
  }
 
+
  .form-input{
-  width: 950px;
-  height: 30px;
+  width: 900px;
+  height: 35px;
   background-color: lightgrey;
   border-radius: 20px;
   border:1px solid lightgrey;
-  margin-left: 25px;
+  margin-left: 20px;
   margin-right: 700px;
  }
 
- .content{
-  background-color: #d8d8d8;
- }
- 
  .welcome{
   display: flex;
   flex-direction: row;
@@ -66,6 +66,16 @@ body{
   margin: 20px;
   margin-left: 50px;
  }
+
+ .avatar-pic, .avatar-welcome{
+  margin: 0 20px;
+ }
+
+
+ .content{
+  background-color: #d8d8d8;
+ }
+
 
 .logo-text h1{
   font-size: 35px;
