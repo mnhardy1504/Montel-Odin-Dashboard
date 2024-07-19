@@ -143,53 +143,44 @@ body{
 
 .card{
   background-color: white;
-  border-left: 10px solid #facc15;
+  border-left: 12px solid #facc15;
   border-radius: 10px;
+  width: 70%;
+  margin: 40px 0;
+  margin-left: 30px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10px;
 }
 
-
-.super-cool-project {
-  background-color: white;
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
 }
 
-.less-cool-project {
-  background-color: white;
+h6{
+font-size: 26px;
 }
 
-.impossible-app {
-  grid-area: impossible-app;
-  background-color: white;
+h2{
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 26px;
 }
 
-.easy-peasy-app {
-  grid-area: easy-peasy-app;
-  background-color: white;
+.card p{
+  font-size: 20px;
+  color: #737373;
+  margin:10px 0;
 }
 
-.ad-blocker {
-  grid-area: ad-blocker;
-  background-color: white;
-}
-
-.money-maker {
-  grid-area: money-maker;
-  background-color: white;
-}
-
-.announcements {
-  grid-area: announcements;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /*thats how i split these sections apart and added space */
-}
-
-.trending-section {
-  grid-area: trending-section;
-  background-color: #fff;
-  padding: 20px;
-  margin-top: 20px; /*thats how i split these sections apart and added space */
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.ann-trend{
+  display: grid;
+  grid-template-rows: 50% 50%;
 }
