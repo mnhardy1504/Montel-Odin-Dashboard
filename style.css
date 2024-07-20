@@ -180,7 +180,53 @@ h2{
   margin:10px 0;
 }
 
+.ann h2{
+  margin-top:40px;
+}
+
 .ann-trend{
   display: grid;
   grid-template-rows: 50% 50%;
+  height: 105%;
+}
+
+.ann-card, .trend-card{
+  height: 80%;
+  width: 80%;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.ann-text{
+  padding: 10px 12px;
+}
+
+.divider{
+  border: 0.5px solid #737373;
+  width: 80%;
+  margin-left: 20px;
+
+}
+
+.ann-text p{
+  font-size: 16px;
+  color: #737373;
+}
+
+.ann-text h6{
+  font-size: 18px;
+  color: black;
+  margin: 10px 0;
+}
+
+.trend-image-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 20px;
+}
+
+.trend-text{
+  margin-left:20px;
+
 }
