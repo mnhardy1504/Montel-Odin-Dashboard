@@ -70,7 +70,7 @@ body {
 }
 
 .form-input {
-  flex-grow: 1;
+  flex-grow: 2;
   height: 35px;
   background-color: #f0f0f0;
   border: none;
@@ -170,7 +170,8 @@ body {
 .ann-card, .trend-card {
   background-color: white;
   border-radius: 10px;
-  padding: 40px;
+  padding: 35px;
+  margin-top: 15px;
 }
 
 .ann-text {
@@ -179,6 +180,14 @@ body {
 
 .ann-text:last-child {
   margin-bottom: 0;
+}
+
+.ann h6{
+  font-size: 14px;
+}
+
+.ann-h2{
+  margin-top: 40px;
 }
 
 .divider {
@@ -191,7 +200,7 @@ body {
 }
 
 .trend-text{
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 18px;
   margin-left: 20px;
 }
