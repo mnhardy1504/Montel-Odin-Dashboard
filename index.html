@@ -1,69 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>ADMIN DASHBOARD</title>
   </head>
-
   <body>
-    <div class="main">
+    <div class="main-grid">
       <div class="sidebar">
-        <h1>Dashboard</h1>
-        <ul class="sidebar-nav">
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
-        </ul>
-        <ul class="sidebar-bottom-nav">
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
-        </ul>
+        <div class="logo-text">
+            <img src="images\finance-custom.png" alt="dash logo" height="40" width="40">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="list-items">
+             <div class="icon-text">
+              <img src="images\home-custom (1).png" alt="dash logo" height="40" width="40">
+              <p>Home</p>
+             </div>
+             <div class="icon-text">
+              <img src="images/badge-account-horizontal-outline-custom.png" alt="dash logo" height="40" width="40">
+              <p>Profile</p>
+             </div>
+             <div class="icon-text">
+              <img src="images\email-alert-outline-custom.png" alt="dash logo" height="40" width="40">
+              <p>Messages</p>
+             </div>
+             <div class="icon-text">
+              <img src="images\bank-transfer-custom.png" alt="dash logo" height="40" width="40">
+              <p>Transactions</p>
+             </div>
+             <div class="icon-text">
+              <img src="images\home-analytics-custom.png" alt="dash logo" height="40" width="40">
+              <p>Net Worth Tracker</p>
+             </div>
+             <div class="icon-text">
+              <img src="images\account-group-custom.png" alt="dash logo" height="40" width="40">
+              <p>Communities</p>
+             </div>
+             <div class="list-items-bottom">
+             <div class="icon-text">
+              <img src="images\cog-outline-custom.png" alt="dash logo" height="40" width="40">
+              <p>Settings</p>
+             </div>
+             <div class="icon-text">
+              <img src="images\help-box-outline-custom.png" alt="dash logo" height="40" width="40">
+              <p>Support</p>
+             </div>
+             <div class="icon-text">
+              <img src="images\shield-account-outline-custom.png" alt="dash logo" height="40" width="40">
+              <p>Privacy</p>
+             </div>
+            </div>
+        </div>
       </div>
+      <div class="main">
         <div class="header">
-          <div class="search-container">
-            <input type="text" placeholder="Search..." class="search-input" />
+          <div class="header-content">
+              <div class="search-bar">
+                  <img src="images\magnify.png" alt="magnifying-glass" height="40" width="40">
+                  <input type="text" class="form-input">
+              </div>
+              <div class="user-info">
+                  <img src="images\bell-badge-outline.png" alt="Bell-Notifications" height="40" width="40"> 
+                  <img src="images\account-custom.png" alt="Profile-Picture" height="40" width="40" class="avatar-pic">  
+                  <h3>Morgan Oakley</h3>
+              </div>
           </div>
-          <div class="header-right">
-            <img src="user-avatar.png" alt="User Avatar">
-          </div>
-          <div class="user-info">
-            <h4> Hi there, </h4>
-            <h1>Morgan Oakley (@morganu)</h1>
-          </div>
-          <div class="header-buttons">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
-          </div>
-          <div class="greeting">
-            <h4> Hi there,</h4>
-          </div>
-  </div>
-      <div class="content">
-        <div class="projects">
-          <div class="project super-cool-project">Super Cool Project</div>
-          <div class="project less-cool-project">Less Cool Project</div>
-          <div class="project impossible-app">Impossible App</div>
-          <div class="project easy-peasy-app">Easy Peasy App</div>
-          <div class="project ad-blocker">Ad Blocker</div>
-          <div class="project money-maker">Money Maker onm</div>
+          <div class="welcome">
+              <div class="left">
+                <img src="images\account-custom.png" alt="Profile-Picture" height="80" width="80" class="avatar-welcome">
+                <div class="welcome-text">
+                    <p>Hi there,</p>  
+                      <h1>Morgan Oakley (@Morgan)</h1>
+                  </div>
+                </div>
+            <div class="right">
+                <button class="btn">New</button>
+                <button class="btn">Upload</button>
+                <button class="btn">Share</button>
+            </div>
+            </div>
         </div>
-        <div class="announcements">
-        </div>
-
-        <div class="trending-section">
-          <h3>Trending</h3>
-
+        <div class="content">
+          <div class="projects">
+            <h2>Your Assets</h2>
+            <div class="cards">
+                <div class="card">
+                  <h6>Crypto Assets</h6>
+                  <p>
+                    Id donec ultrices tincidunt arcu. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Amet facilisis magna etiam tempor orci eu lobortis elementum. Libero justo laoreet sit amet cursus sit amet dictum sit. Cras semper auctor neque vitae tempus. Donec massa sapien faucibus et molestie ac. Egestas tellus rutrum tellus pellentesque eu. Aliquet enim tortor at auctor urna nunc id cursus. Quis lectus nulla at volutpat diam ut venenatis tellus. 
+                  </p>
+                  <div class="icons">
+                    <img src="images\star-plus-outline.png" alt="star-plus" height="40" width="40">
+                    <img src="images\eye-plus-outline.png" alt="eye" height="40" width="40">
+                    <img src="images\share-outline.png" alt="share" height="40" width="40">
+                  </div>
+                </div>
+                <div class="card">
+                  <h6>Real Estate</h6>
+                  <p>
+                    Id donec ultrices tincidunt arcu. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Amet facilisis magna etiam tempor orci eu lobortis elementum. Libero justo laoreet sit amet cursus sit amet dictum sit. Cras semper auctor neque vitae tempus. Donec massa sapien faucibus et molestie ac. Egestas tellus rutrum tellus pellentesque eu.
+                  </p>
+                  <div class="icons">
+                    <img src="images\star-plus-outline.png" alt="star-plus" height="40" width="40">
+                    <img src="images\eye-plus-outline.png" alt="eye" height="40" width="40">
+                    <img src="images\share-outline.png" alt="share" height="40" width="40">
+                  </div>
+                </div>
+                <div class="card">
+                  <h6>Treasuries</h6>
+                  <p>
+                    Id donec ultrices tincidunt arcu. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Amet facilisis magna etiam tempor orci eu lobortis elementum. Libero justo laoreet sit amet cursus sit amet dictum sit. Cras semper auctor neque vitae tempus. Donec massa sapien faucibus et molestie ac. Egestas tellus rutrum tellus pellentesque eu. Aliquet enim tortor at auctor urna nunc id cursus. Quis lectus nulla at volutpat diam ut venenatis tellus. Pulvinar sapien et ligula ullamcorper malesuada proin. Magna eget est lorem ipsum dolor sit amet. Malesuada fames ac turpis egestas integer eget.  
+                  </p>
+                  <div class="icons">
+                    <img src="images\star-plus-outline.png" alt="star-plus" height="40" width="40">
+                    <img src="images\eye-plus-outline.png" alt="eye" height="40" width="40">
+                    <img src="images\share-outline.png" alt="share" height="40" width="40">
+                  </div> 
+                </div>
+                <div class="card">
+                  <h6>Stocks</h6>
+                  <p>
+                    Id donec ultrices tincidunt arcu. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Amet facilisis magna etiam tempor orci eu lobortis elementum. Libero justo laoreet sit amet cursus sit amet dictum sit. Cras semper auctor neque vitae tempus. Donec massa sapien faucibus et molestie ac. Egestas tellus rutrum tellus pellentesque eu.
+                  </p>
+                  <div class="icons">
+                    <img src="images\star-plus-outline.png" alt="star-plus" height="40" width="40">
+                    <img src="images\eye-plus-outline.png" alt="eye" height="40" width="40">
+                    <img src="images\share-outline.png" alt="share" height="40" width="40">
+                  </div>
+                </div>
+                <div class="card">
+                  <h6>Precious Metals</h6>
+                  <p>
+                    Id donec ultrices tincidunt arcu. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Amet facilisis magna etiam tempor orci eu lobortis elementum. Libero justo laoreet sit amet cursus sit amet dictum sit. Cras semper auctor neque vitae tempus. Donec massa sapien faucibus et molestie ac. Egestas tellus rutrum tellus pellentesque eu. Aliquet enim tortor at auctor urna nunc id cursus. Quis lectus nulla at volutpat diam ut venenatis tellus. Pulvinar sapien et ligula ullamcorper malesuada.
+                  </p>
+                  <div class="icons">
+                    <img src="images\star-plus-outline.png" alt="star-plus" height="40" width="40">
+                    <img src="images\eye-plus-outline.png" alt="eye" height="40" width="40">
+                    <img src="images\share-outline.png" alt="share" height="40" width="40">
+                  </div>
+                </div>
+                <div class="card">
+                  <h6>Bonds</h6>
+                  <p>
+                    Id donec ultrices tincidunt arcu. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. Amet facilisis magna etiam tempor orci eu lobortis elementum. Libero justo laoreet sit amet cursus sit amet dictum sit. Cras semper auctor neque vitae tempus. Donec massa sapien faucibus et molestie ac. Egestas tellus rutrum tellus pellentesque eu.
+                  </p>
+                  <div class="icons">
+                    <img src="images\star-plus-outline.png" alt="star-plus" height="40" width="40">
+                    <img src="images\eye-plus-outline.png" alt="eye" height="40" width="40">
+                    <img src="images\share-outline.png" alt="share" height="40" width="40">
+                  </div> 
+                </div>
+            </div>
+          </div>
+          <div class="ann-trend">
+            <div class="ann">
+              <h2>Announcements</h2>  
+              <div class="ann-card">
+                <div class="ann-text">
+                  <h6>Site Maintenance</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat blandit aliquam etiam erat velit scelerisque in. Sed viverra ipsum nunc aliquet bibendum enim. </p>
+                </div>
+                <div class="divider"></div>
+                <div class="ann-text">
+                  <h6>Community Share Day</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat blandit aliquam etiam erat velit scelerisque in. Sed viverra ipsum nunc aliquet bibendum enim. </p>
+                </div>
+                <div class="divider"></div>
+                <div class="ann-text">
+                 <h6>Updated Privacy Policy</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat blandit aliquam etiam erat velit scelerisque in. Sed viverra ipsum nunc aliquet bibendum enim. </p>
+                </div>
+              </div>
+            </div>
+            <div class="trend">
+              <h2>Recommendations</h2>  
+              <div class="trend-card">
+                <div class="trend-image-text">
+                  <img src="images\airplane-custom.png" alt="Travel" height="40" width="40"> 
+                  <div class="trend-text">
+                      <h6>Travel Credit Cards @tcperks</h6>
+                      <p>Read up on which credit card is best for your lifestyle.</p>
+                  </div>
+                </div>
+                <div class="trend-image-text">
+                  <img src="images\reddit-custom.png" alt="Reddit" height="40" width="40"> 
+                  <div class="trend-text">
+                      <h6>r/Options on Reddit is Popular</h6>
+                      <p>See the latest topics Options trading.</p>
+                  </div>
+                </div>
+                <div class="trend-image-text">
+                  <img src="images\account-cash-custom.png" alt="Cash" height="40" width="40"> 
+                  <div class="trend-text">
+                      <h6>Rich Habits Podcast @RHPSP</h6>
+                      <p>Robert and Austin teach you how to build wealth.</p>
+                  </div>
+                </div>
+                <div class="trend-image-text">
+                  <img src="images\youtube-custom (1).png" alt="Youtube" height="40" width="40"> 
+                  <div class="trend-text">
+                      <h6>Market Mondays Ep. 243 7/22/24</h6>
+                      <p>Rashad, Ian, and Troy discuss the best ETFs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>
-
 </html>
